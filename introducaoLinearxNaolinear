@@ -1,0 +1,45 @@
+Alocação de Variáveis:
+
+As variáveis são alocadas em espaços distintos na memória RAM.
+Cada tipo de dado (int, float, etc.) pode ser alocado em uma região específica da memória.
+Estática vs Dinâmica:
+
+Alocação estática: Variáveis são alocadas desde o início do código.
+Alocação dinâmica: Variáveis são alocadas conforme a demanda durante a execução do código.
+Contínua vs Não Contínua:
+
+Alocação contínua: Dados são alocados em posições adjacentes na memória (ex: arrays).
+Alocação não contínua: Dados podem ser alocados em diferentes partes da memória e acessados via ponteiros.
+Java, Python e Estruturas:
+Java e Python:
+
+Linguagens de alto nível que escondem detalhes da alocação de memória.
+Mesmo sem preocupação direta com estruturas, compreender a alocação é crucial para resolver problemas futuros.
+Estruturas de Dados:
+
+Arrays são exemplos de alocação contínua.
+Alocação não contínua permite acesso a elementos em diferentes partes da memória.
+Alocação na RAM:
+Tipos de Alocação:
+
+
+Pilha e Heap na Alocação de Variáveis Locais:
+Pilha (Stack):
+
+Utilizada para armazenar variáveis locais e tabelas de execução de funções.
+Alocada e liberada automaticamente.
+Limitada em tamanho.
+Estrutura tipo pilha, onde variáveis locais são empilhadas e desempilhadas.
+Memória Livre (Heap):
+
+Usada na alocação dinâmica, incluindo variáveis locais, instruções do programa e variáveis estáticas.
+Alocação sob demanda, permitindo maior flexibilidade.
+Requer gestão manual, com a necessidade de liberar memória quando não for mais necessária.
+Diferenças e Detalhes:
+
+Pilha:
+Contém tabelas de variáveis locais.
+Armazena também memória livre.
+Heap:
+Inclui variáveis locais, instruções do programa e variáveis estáticas.
+Área de armazenamento fixo.
