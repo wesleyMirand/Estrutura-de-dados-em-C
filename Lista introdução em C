@@ -1,0 +1,68 @@
+Estrutura de dados com lista
+- Lista no dia a dia: compras, tarefas.
+- Lista é um conjunto de elementos organizados em sequência, sendo possível inclusão e remoção.
+
+- Na computação, essas listas são chamadas de listas encadeadas.
+- São implementadas como listas encadeadas:
+  - Máximo um elemento subsequente.
+  - Máximo um elemento antecedente.
+- Na lista encadeada, ocorrem inserções e remoções. Por exemplo, em uma lista de supermercado, se esqueci de colocar um item, vou lá e coloco no final. Estou recolhendo os itens e deu tempo de pegar o que eu esqueci no meio? Já coloco na lista no meio mesmo e pego ele.
+
+- Listas encadeadas têm alguns recursos privilegiados na linguagem C.
+  - Lista implementada utiliza:
+    - Struct: Representa cada elemento da lista.
+    - Ponteiro: Realiza o encadeamento entre um e outro elemento (endereço).
+    - Alocação Dinâmica: Responsável por reservar espaço na execução para novos elementos da lista encadeada. Se esqueci algo, tenho que alocar espaço para colocar.
+
+- Lista Encadeada - Implementação
+
+-> ELEMENTO -> ELEMENTO -> ELEMENTO -> ELEMENTO -> ELEMENTO ->
+
+Série de elementos, formando uma corrente de encadeamento entre eles.
+O que significa cada coisa?
+->: Essas setas são ponteiros, elas apontam para o próximo elemento da lista e com eles vou trafegar na lista.
+Struct (ELEMENTS): Os elementos em si que criamos, a struct aponta para o próximo ponteiro, que irá apontar para o próximo elemento encadeado na memória.
+
+Lista de Encadeamentos na memória RAM
+
+Lista encadeada.
+Exemplo de estrutura lógica como dá para imaginar:
+
+ELEMENTO
+     |
+Elemento
+     |
+Elemento
+
+
+
+Memória RAM:
+
+Organização física como está na memória RAM.
+
+                                  ELEMENTO
+                                  ^
+                                  |
+                     Elemento<-----------------
+                                  |
+                                  |
+                                  |--------> Elemento
+                                  |
+                                  |
+                                  |
+                     Elemento<----|
+ 
+Ao contrário dos vetores que são alocados na memória RAM, ele seria alocado em tantas posições, porém na lista de memória e não seriam encadeadas; elas podem estar alocadas em diferentes partes da memória.
+
+Listas Encadeadas:
+
+- Pontos positivos:
+  - Alocam sob demanda. Não precisam de mais espaço e, se precisar, só alocar mais. O espaço em memória é definido se for usar "Array". Exemplo: Não sei quantos espaços vou alocar, vou precisar de um espaço suficiente que garanta que o programa não vai dar problema ao alocar. E já na "Dinâmica" pode alocar sob demanda, se precisar de 10 elementos em tal lugar, iremos alocar esses 10 elementos sem problemas e se precisar de mais é só alocar mais.
+  - Vetor 1 3 5 posição. Se precisar por o 2 e 4, iremos ter que solicitar mais uma posição com 6 e aí vamos poder por. E já com vetores não precisa; a lista encadeada pode mexer em qualquer lugar, não necessita de realocação, tendo espaço vazio só preencher.
+  - Inserção e Remoção da estrutura não precisam de realocação dos demais elementos já existentes.
+
+- Pontos negativos:
+  - Estruturas não estão linearmente na memória.
+  - Busca por elemento se torna mais difícil. Estão espalhados sem organização.
+  - Inserção e remoção podem ser trabalhosas se a posição estiver muito distante.
+  - Necessita percorrer toda a lista para inserir e remover. Acessar o vetor na posição 5 é normal e rápido. Procurar um elemento requer começar no começo da lista e ir passando de um em um. Ponteiro em ponteiro para acessar a struct até achar.
