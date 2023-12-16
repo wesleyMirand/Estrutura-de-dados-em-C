@@ -1,0 +1,87 @@
+Forma ilustrativa de como fazer um inserção de uma posição arbitraria dentro da nossa lista.Então vamos escolher uma posição e ela fazer inserção conforme o numero da posição for pasado.
+
+primeira coisa é nossa LP lista , vetor que aponta para o primeiro elemento da lista.vai ser o LP
+
+*LP ----> NULL
+
+
+E vamos ter também  pra trabalhar com inserção uma posição especifica. 
+
+Lenght= 0;
+
+Já vimos que da para inserir pontos na lista, no inicio e no final, mais agora vamos inserir em um posição arbitraira ou seja qualquer posição da lista.
+
+E no meio como faço?
+Nosso ponteiro LP acima aponta para NULL porque não temos nenhum elementro na lista. E minha variavel LENGHT como com 0, porque nao temos nenhum elemento.
+Então vamos dar sequencia:
+primeiro coisa se eu quiser  fazer inserção na posição 1 oque iria acontecer?
+Então se eu for inserir na posição, não irei conseguir, porque não tenho nenhum elemento e essa posição não existe ainda. Então vai ser negado! não sera permitido :
+
+(INSERIR PONTO posição 1)
+
+ Mais se quiser inserir exemplo pont1 na posição zero  :
+(Inserir PONTO posição 0)
+Vai ser permitido porque a lista incialmente inincia com zero mesmo ela sendo vazia.
+
+Então eu vou criar um novo ponto 
+É permitido!
+
+
+Agora vou alocar um nova Struct  com o valor x=1 e y=1 e o prox NULL, porque estou criando um novo elemento
+
+     |  PONTO   |
+     |   Y= 1   |
+     |   X= 1   |
+     | *prox    |----------->NULL
+
+AI meu LP que é NULL vai acabar apontando para o PONTO
+e o Lenght vai ficar Lenght=1. Porque adicionei um elemento na lista. Então vamos ter esse controle.
+
+E agora vou querer inserir :
+
+(Inserir  PONTO(2,4) na posição 1)
+
+Ja tenho struct na posição zero e agora quero na posição 1.
+POSSO AGORA? SIM! porque eu ja tenho o zero agora posso inserir o elemento na posição 1.
+
+ 1-elemento
+LP-->|  PONTO   |                         |  PONTO   |                         
+     |   x= 1   |                         |   x= 2   |
+     |   y= 1   |                         |   y= 4   |
+     | *prox    |----------->NULL         | *prox    |----------->NULL  
+   posicão 0                                posição 1      
+lengh= 1;
+
+so que agora o prox do primeiro PONTO vai aponto pro PONTO segundo e agora meu tamanho é 2.
+
+       1-elemento                            2-elemento
+LP-->|  PONTO   |             |----------> |  PONTO   |                         
+     |   x= 1   |            |             |   x= 2   |
+     |   y= 1   |           |              |   y= 4   |
+     | *prox    |-----------               | *prox    |----------->NULL  
+   posição 0                              posição 1             
+lengh= 2;
+
+E se eu quiser inserir um novo elemento na Posição 1, 3 e 9 :
+
+Vou tenque passar esse pra proxima posição 2 e inserir novo elemento no lugar que ele esta:
+   2elemento
+     |  PONTO   |
+     |   Y= 2   |
+     |   X= 4   |
+     | *prox    |----------->NULL
+  posição 1
+
+AGORA (inserir  PONTO(3, 9) na posição1)
+
+O novo ponto 3,9  vai apontar prox dele pro ponto 2,4. e o ponto antigo 1,1 vai apontar pro novo PROX 3 E assim eu consigo inserir como intermerdiario entre os ponto 1,1 e o ponto 2 4.
+       1-elemento     2-elemento                         3-elemento
+LP-->|PONTO|        |  PONTO   |             |----------> |  PONTO   |                         
+     |x=1  |        |   x= 3   |            |             |   x= 2   |
+     |y=1  |        |   y= 9   |           |              |   y= 4   |
+     |*prox|------> | *prox    |-----------               | *prox    |----------->NULL  
+   posição 0          posição 1                            posição 2        
+
+agora o tamanho é 3 elementos
+lengh= 3;
+
