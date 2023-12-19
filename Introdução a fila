@@ -1,0 +1,42 @@
+Introdução a FILAS
+
+.Filas estão sempre no nosso dia a dia:
+
+-banco
+-compra ingressos
+-cinema
+-mercado
+.Uma fila é um conjunto de elementos ordenados segundo um determinado criterio.
+
+.Na computação a fila é um caso particular de lista
+.Um elemento encadeado a outro em forma de lista:
+
+-no maximo 1 subsequente
+-no maximo 1 elemento antecedente
+
+.Diferente da lista em uma fila os elementos, podem ser inseridos no final, e a remoção só pode ser feita no inicio.
+-Fila de banco: Quem chega primeiro é atendido(remoção no inicio), e quem chega depois  ficam no final(inserção no final).
+Utilizado a todo momento mesmo que não seja por nós: So vou remover no inicio e implementar no final 
+para ela ter mais empenho.Guarda um ponteiro no inicio e outro no final da lista
+
+.Fila é utiliza:
+Struct: cada um elemento.
+Ponteiros: Realiza encadeamento.
+Alocação Dinamica: Reserva espaço em tempo de execução para novos elemento, na lista encadeada.
+
+.Pontos Positivos
+-Aloca sob demanda: Adiciona elemento se existir elemento a ser inserido.
+exemplo: Sistemas operacionais implementão filas de processo, para que seja acessada em alguma ordem, implementão diferentes 
+filas para acessar o processador.
+
+-Inserção e remoção feitas em locais especificios da estrutura, facilia implementacao para desempenho:  So
+vou remover no inicio e implementar no final para ela ter mais empenho.Guarda um ponteiro no inicio e outro 
+no final da lista.
+
+.Pontos Negativos
+-Estruturas não estão linearmente na memoria
+  Busca por elemento se torna chata
+- Não permite inserção em qualquer posição, so no inicio ou no final. 
+Decidir se vai usar mesmo no programa, porque tem lado bom e ruim!
+
+
