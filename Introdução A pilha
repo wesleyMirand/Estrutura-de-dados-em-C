@@ -1,0 +1,61 @@
+PILHA
+
+Estrutura de dados onde elemento se organizam encima do outro.
+Só pode remover e inserir no topo.
+Tipo prato: empilhando sempre encima e lavar começando de cima.
+
+Implementacao
+
+Ele 
+ ^prox
+ele 
+ ^prox
+ele 
+ ^pro
+ele 
+ ^
+inicio lista
+
+Para inserir temos que passar por todos elementos e vai ser trabalhoso
+
+Implementação Eficiente SIMPLES
+
+
+Ultimo
+ !prox
+ele 
+ !prox
+ele 
+ !pro
+ele 
+ !
+inicio
+
+Para criar elemento insiro encima do ultimo e aponto para onde o ultimo aponta, assim 
+perdendo a referencia do ultimo substituindo ele.
+
+Remover:
+
+Ultimo prox vai aponta para onde o ultimo estava apontando e vai perde referencia do primeiro
+elemento. Memoria que ele ocupa vai continuar porem vai perde a referencia.
+
+elemento PERDI REFERENCIA
+ !prox
+ele   ULTIMO novo que criei
+ !prox
+ele 
+ !pro
+ele 
+
+
+Unica coisa que troca por inicia sempre no topo na lista e finalizar no inicio. Posso fazer
+inverso começar do inicio e sempre continuar no inicio vai da na mesma
+Ele 
+ ^prox
+ele 
+ ^prox
+ele 
+ ^pro
+ele 
+ ^
+inicio lista
