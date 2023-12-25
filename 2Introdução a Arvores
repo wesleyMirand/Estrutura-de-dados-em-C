@@ -1,0 +1,35 @@
+1Começamos com um nodo contendo o valor 5.
+
+    5
+
+2Agora, adicionamos o valor 2. Como 2 é menor que 5, ele vai para a esquerda.
+
+       5
+      /
+     2
+
+3Em seguida, adicionamos o valor 1. Como 1 é menor que 5 e também menor que 2, ele vai para a esquerda do nodo 2.
+
+       5
+      /
+     2
+    /
+   1
+
+4Adicionamos o valor 8. Como 8 é maior que 5, ele vai para a direita do nodo 5.
+
+       5
+      / \
+     2   8
+    /
+   1
+
+5Finalmente, adicionamos o valor 4. Como 4 é menor que 5 e maior que 2, ele vai para a direita do nodo 2.
+
+       5
+      / \
+     2   8
+    / \
+   1   4
+
+
