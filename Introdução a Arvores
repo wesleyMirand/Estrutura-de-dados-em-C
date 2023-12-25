@@ -1,0 +1,27 @@
+Estruturas de Dados Não-Lineares:
+
+As árvores são estruturas de dados não-lineares, o que significa que os elementos não são organizados de maneira sequencial, como em uma lista.
+Apontar para 1 ou Mais Elementos:
+
+Os nodos em uma árvore podem apontar para um ou mais elementos. Cada nodo é como um ponto de referência que pode ter ramos (filhos) conectados a ele.
+Representação da Copa da Árvore:
+
+A parte superior da árvore, onde todos os nodos se conectam, é conhecida como a "copa" da árvore. É como a raiz da estrutura.
+Uso em Jogos para Otimizar Desempenho:
+
+Árvores são frequentemente usadas em jogos para otimizar o desempenho, como em estratégias de busca e organização de dados.
+Organização na Memória:
+
+Ao contrário de estruturas lineares como listas, as árvores não são necessariamente organizadas sequencialmente na memória. Elas são mais como estruturas de galhos.
+Flechas Ponteiros e Ramos:
+
+As flechas (ponteiros) representam os ramos da árvore. Cada nodo pode apontar para outros nodos, criando uma estrutura ramificada.
+Bolinhas Struct e Elementos Filhos:
+
+Cada nodo é como uma "bolinha struct" que pode conter um ou mais elementos, chamados de filhos. Cada elemento abaixo de um nodo é um filho desse nodo.
+Bifurcação e Criação de Caminhos:
+
+Diferentemente de listas lineares, as árvores permitem bifurcação, criando caminhos não lineares. Isso é útil para representar relações hierárquicas.
+Tipos de Árvores:
+
+Existem vários tipos de árvores, e o tipo escolhido depende da aplicação. Exemplo: "Árvore Binária" tem nodos com no máximo dois filhos.
