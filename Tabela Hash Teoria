@@ -1,0 +1,39 @@
+Tabela Hash
+- Estrutura intermediaria, usa para indexar valores ou partes de valores, forma de otimizar as bucas maiores.
+-Formada por estrutura de dados e funcao (chamada Hash).
+-Descar busca, parcela dados onde o valor buscado nao esta. Usa "Heuristicas" depedendo do problemA.
+-Usado para desenvolver sistemas e armazenar registros contendo o nome completo e cpf de pessoas.
+-Armazenar vetor, onde cada elemento é uma struct "Tipo Pessoa", que usa nome e cpf.
+-Armazena varios vetores com varios nomes e cpf.
+
+Tabela dados, cada registro uma pessoa struct
+
+                 |    Nome                       cpf
+                 |    claudia miranda           4454654654
+StructPessoa-----|    juana miranda             6456464646
+                 |    leonardo viana            4556446645
+                 |    Luana viana               455644664
+                 |    matheus viana               455644664
+                 |    mario viana               455644664
+
+-pode usar busca binaria? NÂo! porque os nomes não estão em ordem ! MAIS podemos fazer 3 grupos  : 1-claudia, 2- ju, 3- leo, lu 4- matheus, mario.
+
+E sequencia? daria mais iria percorrer muitos elemento.
+
+Com organizacao parcial : 1-claudia, 2- ju, 3- leo, lu 4- matheus, mario.
+
+
+
+                       estrutra intermediARIA      |    Nome                       cpf
+                                   C->             |    claudia miranda           4454654654
+
+string ---> FUNCAO HASH            J->             |    juana miranda             6456464646
+busca
+                                    L->             |    leonardo viana            4556446645
+                                    |->            |    Luana viana               455644664
+
+                                   M->             |    matheus viana               455644664
+                                    |->            |    mario viana               455644664
+
+OS NOMES QUE COMECAM POR TAL LETRAS, VOU COMPARAR, HASH SEMI ORGANIZACAO.
+FORCA BRUTA SERIA COM COMPARACAO.
