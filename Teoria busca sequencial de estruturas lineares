@@ -1,0 +1,41 @@
+Busca sequencial
+
+-busca linear define como vai ser a organização fisica de tais elementos na memoria, eles estao em sequencia lado a lado na memoria ram.
+-Uma busca de estrutura linear  é tipo percorrer uma estrutura buscando um ou mais elementos, verificando se esta armazenado. Tipo
+cadastro procurar uma informacao da pessoa.
+-Cada elemento é comparado  para saber se é ele mesmo que estamos procurando.
+-Quando encontramos o elemento interrompemos as busca
+-A busca pode ser de varias formas.
+
+Sequencial 
+- linear em c : vetor ou matriz, linearmente organizado lado a lado
+-todos elemento do vetor estao lado a lado
+
+ele  ele  ele   ele       
+|5|  |8|  |56|  |2|
+| |  | |  |  |  | |
+|0|  |1|  |2 |  |3|  Posicao , percorrer cada indice em busca sequencial
+
+descobri se o 56 ta na lista
+
+v[0] ==56
+  5==56          ? = não !
+
+v[1] ==56
+  8==56          ? = não !
+
+v[2] ==56
+  56==56          ? = sim!
+
+Busca interrompida encontrei elemento! na lista posiçao 2
+
+Se fosse ate a 3 e nao achasse iria finalizar senod que elemento no esta na estrutura linear em busca sequencial.
+
+Vantagemm :fÁcil IMPLEMENTAÇÃO
+-------------------------------------------------
+Desvantagem :
+-O unico problema é custo computacional !
+-o pior é o elemento esta na ultimo posição!exemplo:
+banco de dados RG: até achar o seu rg tenque procura milhoes de rg, perda de tempo, alto custo...
+
+Busca sequencial não é a melhor opção.
