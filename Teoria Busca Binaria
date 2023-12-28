@@ -1,0 +1,70 @@
+Buca Binaria
+
+-Diferente da sequencial ela usa outra lógica pra percorrer a estrutura linear.
+-Para buscar, a  estrategia é que esteja ordenada o valor de busca.Pode ter um struct e dentro dela varios valores de busca ordenados.
+-Pode ter varios locais de busca nela.
+
+exemplo:
+|2|  |5|   |8|   |15|  |36|  |47|   |98|
+0    1      2     3    4     5       6
+
+-Vamos supor que o vetor é estrutura linear
+-Agora está organizado em estrutura linear, ordem crescente.
+-1:Elemento caso fosse 15 procurando achei.
+-2: bUSCANDO MENOR VALOR 15, VAI TA PRA TRAS DO 15 ANTERIOR INDICE 3 OU MAIOR DEPOIS DE 3.
+-3: CRIAR regras pra informação.
+
+Objetivo achar 47 na lista:
+
+v->|2|  |5|   |8|   |15|  |36|  |47|   |98|
+    0    1      2     3    4     5       6
+
+    |_______________________________________|
+                       |
+      Usamos todo o vetor como area de busca.
+
+Peguei o meio no indice 3 |15|,  elemento pivo central, compara se elemento é igual oque to buscando.
+                      v|3| == 47
+                      15  ==  47
+                         Falso
+                   |______________|
+                           |
+                 -Tomamos todo vetor nossa area de busca
+                 -Definios o elemento central como o pivo
+                 -Comparamos o elemento buscado
+                 - 47 é maior que 15 então so pode ta depois, porque ta ordenado, tipo procurar uma casa numero crescente na rua.
+Nova area de busca :
+
+|36|  |47|   |98|
+ 4     5       6
+|______________|
+       |
+- sabemos que 47 esta a direita na lista
+- calculamos nova area, novo pivo pesquisa 47 no indice 5
+  V[5] ==47
+   47 == 47
+    achou!!!!!!!!!!!!!!!! Na posição 5! 
+Diminuir espaço! Comparar com 15 e 47.
+e se não fosse e fosse no indice 4.
+
+ia comparar o 5 e 6 e voltaria pro 4= minimo de 3 comparações.
+
+Vantagem :
+- custo baixo pouca comparacao
+- o custo computacional é   log2n. N é o numero de vetor e resultado de quantidade comparativa.
+
+Desvantagem: 
+-implementacao um pouco mais complexa.
+
+LIMITES MINIMOS E MAXIMO, ALGORITMO VANTAJOSO SEMPRE ORDENADO!
+SE NA SEQUENCIA TEM POUCA COMPARACAO, NA BINARIA TEM MAIS COMPARACAO MAIS TENQUE ESTAR ORDENADA.
+BINARIA É RUIM QUANDO TENQUE INSERIR ELEMENTO TODA HORA NA ESTRUTURA NO MEIO, PORQUE SEMPRE VOU TENQUE VERIFICAR, AI VAI SER GASTO A BUSCA
+BINARIA!
+
+                  COMPARACAO                   COMPARACAO
+ELEMENTO         BUSCA SEQUENCIAL             BUSCA BINARIA
+1                    1                          0
+2                   2                             1
+3                   3                            2
+99                   99                          7
+100                 100                         7
