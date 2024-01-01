@@ -16,14 +16,14 @@ int main(void) {
   int continuar = 1;
 
   int ini = 0;
-  int fim = 99;
+  int fim = 90;
 
   while (continuar == 1)
   {
    comparacoes ++;
    int pivo = (ini + fim ) /2;
     if(v[pivo] == num) {
-      printf("Elemento encontrado\n");
+      printf("Elem foi encontrado\n");
       continuar = 0;
     }
     else {
