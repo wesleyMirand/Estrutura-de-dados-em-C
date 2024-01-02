@@ -1,4 +1,4 @@
-//Executando o laço while e for junto.O laço while foi mudando a variavel de 0 até 4 porque o teste era até que ela fosse menor que 5, aparti do momento que ela chega em 5 ela ja não é menor que 5, é igual ai ja não vale mais. E no for ela inicializa no zero vai ser executada até que seja menor que 4 e o valor dela se torna incrementado a cada execução. No 3 ela para por ser menor que 4, vira igual ai para porque ja não vale mais o laço.Essas são as principais duas forma de laço de repetição.
+//Executando o laço while e for junto.O laço while foi mudando a variavel de 0 até 6 porque o teste era até que ela fosse menor que , aparti do momento que ela chega em 9 ela ja não é menor que 9, é igual ai ja não vale mais. E no for ela inicializa no zero vai ser executada até que seja menor que 4 e o valor dela se torna incrementado a cada execução. No 3 ela para por ser menor que 4, vira igual ai para porque ja não vale mais o laço.Essas são as principais duas forma de laço de repetição.
 
 #include <stdio.h>
 
