@@ -7,14 +7,14 @@ int main() {
 
   int a = 0;
 
-  while (a < 5) {
+  while (a < 10) {
     printf("\nVariavel 'a' é: %d\n", a);
     a++;
   }
 
   printf("\n\nLaço FOR\n\n");
 
-  for (int i = 0; i < 4; i++) {
+  for (int i = 0; i < 6; i++) {
     printf("\nA variavel i é : %d\n", i);
   }
 
