@@ -3,18 +3,18 @@
 #include <stdio.h>
 
 struct pessoa {
-  int idade;
-  float altura;
+  int Years;
+  float height;
 };
 
 typedef struct pessoa Pessoa;
 
 int main() {
   Pessoa p;
-  p.idade = 5;
-  p.altura = 1.65;
+  p.years = 5;
+  p.height = 1.65;
 
-  printf("A idade da pessoa é %d e a altura é %.2f", p.idade, p.altura);
+  printf(" this is Years  %d height is %.2f", p.years, p.height);
 
   return 0;
 }
